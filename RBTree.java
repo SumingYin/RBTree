@@ -13,17 +13,6 @@ import java.util.Random;
  */
 public class RBTree {
 
-    public static void main(String[] args) {
-        RBTree rbTree = new RBTree();
-        for (int i = 0; i < 6; i++) {
-            Random random = new Random();
-            int num = random.nextInt(100);
-            rbTree.add(num);
-        }
-        System.out.println(rbTree);
-    }
-
-
     Node root = null;
     // 构造器
     public RBTree() {
