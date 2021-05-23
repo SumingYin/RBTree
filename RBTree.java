@@ -879,6 +879,10 @@ public class RBTree {
                 } else {
                     parent.rightSub = null;
                 }
+            }else {
+                // 为根节点，没有可替代的节点存在，返回null
+                root = null;
+                return true;
             }
         } else if (deleteNode.rightSub != null) {
             // 要么右子树存在要么左子树存在，选择其中之一
