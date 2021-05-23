@@ -653,6 +653,7 @@ public class RBTree {
                     // 返回替换的引用
                     Node node = nomalDelete(deleteNode);
                     node.color = 1;
+                    return true;
 
                 }
                 else {
